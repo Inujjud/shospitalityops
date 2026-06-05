@@ -92,6 +92,11 @@ html,body { height:100%; font-size:13px; background:var(--bg); color:var(--text)
 .sb-user-role { font-size:10px; color:rgba(255,255,255,.35); white-space:nowrap; }
 .sb-toggle-btn { display:flex; align-items:center; justify-content:center; padding:8px; border-radius:7px; cursor:pointer; color:rgba(255,255,255,.35); transition:all .15s; margin-top:4px; }
 .sb-toggle-btn:hover { background:rgba(255,255,255,.07); color:rgba(255,255,255,.7); }
+.sb-logout-btn { display:flex; align-items:center; gap:8px; width:100%; padding:8px 10px; border-radius:7px; cursor:pointer; color:rgba(255,100,100,.75); transition:all .15s; font-size:12px; font-weight:600; background:none; border:none; margin-top:4px; }
+.sb-logout-btn:hover { background:rgba(231,76,60,.15); color:#ff6b6b; }
+.sb-logout-btn i { font-size:16px; flex-shrink:0; }
+.sidebar.collapsed .sb-logout-btn span { display:none; }
+.sidebar.collapsed .sb-logout-btn { justify-content:center; padding:8px; }
 .sidebar.collapsed .sb-user-name,.sidebar.collapsed .sb-user-role { display:none; }
 
 /* ===== TOPBAR ===== */
@@ -916,7 +921,7 @@ const LANGS = {
     progress:'Progress', hours:'hrs', daysDelay:'days delay', location:'Location',
     assignees:'Assignees', depts:'Departments', created:'Created', updated:'Updated',
     by:'by', actions:'Actions', id:'ID', title:'Title', due:'Due', name:'Name',
-    createdBy:'Created by', estimatedHrs:'Est. Hours',
+    createdBy:'Created by', estimatedHrs:'Est. Hours', logout:'Sign Out',
   },
   ar: {
     appName:'Ø¹ÙÙÙØ§Øª S Hospitality', loginSub:'Ø³Ø¬ÙÙ Ø¯Ø®ÙÙÙ ÙØ¥Ø¯Ø§Ø±Ø© Ø§ÙØ¹ÙÙÙØ§Øª Ø§ÙÙÙØ¯ÙÙØ©',
