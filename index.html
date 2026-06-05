@@ -444,7 +444,7 @@ input:checked + .toggle-sl::before { transform:translateX(22px); }
       <div class="fld"><label data-i18n="password">Password</label><input id="l-pass" type="password" onkeydown="if(event.key==='Enter')doLogin()"></div>
       <button class="btn btn-primary btn-full mt-3" onclick="doLogin()"><i class="ti ti-login"></i><span data-i18n="signIn">Sign In</span></button>
       <div style="margin-top:16px;text-align:center;">
-        <button class="btn btn-ghost btn-sm" onclick="toggleLang()" style="font-size:12px;"><i class="ti ti-language"></i> <span id="lang-login-btn">العربية</span></button>
+        <button class="btn btn-ghost btn-sm" onclick="toggleLang()" style="font-size:12px;"><i class="ti ti-language"></i> <span id="lang-login-btn">Ø§ÙØ¹Ø±Ø¨ÙØ©</span></button>
       </div>
     </div>
   </div>
@@ -493,7 +493,7 @@ input:checked + .toggle-sl::before { transform:translateX(22px); }
       <!-- Language toggle -->
       <button class="lang-btn" onclick="toggleLang()" title="Switch language">
         <i class="ti ti-language"></i>
-        <span id="lang-topbar-btn">عربي</span>
+        <span id="lang-topbar-btn">Ø¹Ø±Ø¨Ù</span>
       </button>
       <!-- Notifications -->
       <div style="position:relative">
@@ -591,7 +591,7 @@ input:checked + .toggle-sl::before { transform:translateX(22px); }
       <div class="screen" id="screen-astats">
         <div class="sec-head"><div class="sec-title" data-i18n="statistics">Statistics</div></div>
         <div style="background:var(--accent-light);border:1px solid #C0D9EE;border-radius:8px;padding:9px 14px;margin-bottom:16px;font-size:12px;color:var(--accent);display:flex;align-items:center;gap:6px">
-          <i class="ti ti-info-circle"></i> <span data-i18n="adminReadOnly">Admin view — read-only statistics</span>
+          <i class="ti ti-info-circle"></i> <span data-i18n="adminReadOnly">Admin view â read-only statistics</span>
         </div>
         <div class="stat-grid" id="admin-stats"></div>
         <div class="chart-row" style="margin-top:16px">
@@ -709,7 +709,7 @@ input:checked + .toggle-sl::before { transform:translateX(22px); }
         <div class="drop-zone" onclick="document.getElementById('att-file-input').click()">
           <i class="ti ti-cloud-upload"></i>
           <div style="font-weight:600;margin-bottom:4px" data-i18n="dropFiles">Drop files here or click to upload</div>
-          <div style="font-size:12px;color:var(--text3)" data-i18n="fileTypes">PDF, Images, Word, Excel — max 20MB each</div>
+          <div style="font-size:12px;color:var(--text3)" data-i18n="fileTypes">PDF, Images, Word, Excel â max 20MB each</div>
         </div>
         <input type="file" id="att-file-input" multiple style="display:none" onchange="handleFileUpload(event)">
         <div id="att-list" style="margin-top:12px"></div>
@@ -860,8 +860,8 @@ input:checked + .toggle-sl::before { transform:translateX(22px); }
 // ============================================================
 //  SUPABASE CONFIG
 // ============================================================
-const SB_URL = 'https://ahaghhfunonuvpubrwyx.supabase.co';
-const SB_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFoYWdoaGZ1bm9udXZwdWJyd3l4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODA1MTUwMjQsImV4cCI6MjA5NjA5MTAyNH0.y-8X_4R3zdfSfKyCuWfJmwHW7J5HiwROnVbowmZGkpQ';
+const SB_URL = 'https://awlyozjjgtewxelayzdp.supabase.co';
+const SB_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImF3bHlvempqZ3Rld3hlbGF5emRwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODA2NzQwNzIsImV4cCI6MjA5NjI1MDA3Mn0.-m3zXGCAJOoZMyTJg2rjgfeYwluImzgWyF-9a9na6ws';
 let sb = null;
 try { sb = supabase.createClient(SB_URL, SB_KEY, { auth: { persistSession: false } }); }
 catch(e) { console.warn('Supabase unavailable, using local data'); }
@@ -883,7 +883,7 @@ const LANGS = {
     taskTitle:'Task Title *', description:'Description', assignTo:'Assign To', priority:'Priority',
     status:'Status', dueDate:'Due Date', estimatedHours:'Estimated Hours', delayDays:'Delay Days',
     delayReason:'Delay Reason', lastLocation:'Last Location / Stop Point', notes:'Notes / Progress Update',
-    dropFiles:'Drop files here or click to upload', fileTypes:'PDF, Images, Word, Excel — max 20MB each',
+    dropFiles:'Drop files here or click to upload', fileTypes:'PDF, Images, Word, Excel â max 20MB each',
     requestMeeting:'Request a Meeting', meetingDesc:'Schedule a meeting related to this task',
     meetingTitle:'Meeting Title', date:'Date', time:'Time', locationLink:'Location / Link',
     agenda:'Agenda', scheduleMeeting:'Schedule Meeting', addSubtask:'Add Subtask',
@@ -899,7 +899,7 @@ const LANGS = {
     tasksCompleted:'tasks completed', noTasks:'No tasks yet', addFirstTask:'Add your first task to get started',
     noTeam:'No team members yet', noDepts:'No departments yet', noComments:'No comments yet',
     noHistory:'No history yet', noFiles:'No files attached', searchTasks:'Search tasks...',
-    adminReadOnly:'Admin view — read-only statistics', meetingScheduled:'Meeting scheduled',
+    adminReadOnly:'Admin view â read-only statistics', meetingScheduled:'Meeting scheduled',
     meetingFor:'for', darkMode:'Dark Mode', language:'Language', themeColor:'Theme Color',
     fontSize:'Font Size', small:'Small', medium2:'Medium', large:'Large', hotelName:'Hotel Name',
     saveChanges:'Save Changes', profilePicture:'Profile Picture', changePhoto:'Change Photo',
@@ -919,55 +919,55 @@ const LANGS = {
     createdBy:'Created by', estimatedHrs:'Est. Hours',
   },
   ar: {
-    appName:'عمليات S Hospitality', loginSub:'سجّل دخولك لإدارة العمليات الفندقية',
-    loginErr:'اسم المستخدم أو كلمة المرور غير صحيحة', username:'اسم المستخدم', password:'كلمة المرور',
-    signIn:'تسجيل الدخول', operations:'العمليات', dashboard:'لوحة التحكم', tasks:'المهام',
-    myTasks:'مهامي', team:'أعضاء الفريق', departments:'الأقسام', settings:'الإعدادات',
-    statistics:'الإحصائيات', notifications:'الإشعارات', markRead:'قراءة الكل',
-    thisMonth:'هذا الشهر', newTask:'مهمة جديدة', issueTask:'إصدار مهمة',
-    addMember:'إضافة عضو', addDept:'إضافة قسم', board:'لوحة', list:'قائمة',
-    edit:'تعديل', cancel:'إلغاء', save:'حفظ', confirm:'تأكيد', delete:'حذف',
-    details:'التفاصيل', attachments:'المرفقات', meeting:'اجتماع', subtasks:'المهام الفرعية',
-    overview:'نظرة عامة', comments:'التعليقات', files:'الملفات', history:'السجل',
-    taskTitle:'عنوان المهمة *', description:'الوصف', assignTo:'تعيين إلى',
-    priority:'الأولوية', status:'الحالة', dueDate:'تاريخ الاستحقاق',
-    estimatedHours:'الساعات التقديرية', delayDays:'أيام التأخير', delayReason:'سبب التأخير',
-    lastLocation:'آخر موقع / نقطة التوقف', notes:'ملاحظات / تحديث التقدم',
-    dropFiles:'اسحب الملفات هنا أو انقر للرفع', fileTypes:'PDF، صور، Word، Excel — الحجم الأقصى 20MB',
-    requestMeeting:'طلب اجتماع', meetingDesc:'جدولة اجتماع مرتبط بهذه المهمة',
-    meetingTitle:'عنوان الاجتماع', date:'التاريخ', time:'الوقت', locationLink:'الموقع / الرابط',
-    agenda:'جدول الأعمال', scheduleMeeting:'جدولة الاجتماع', addSubtask:'إضافة مهمة فرعية',
-    issueNewTask:'إصدار مهمة جديدة', fullName:'الاسم الكامل *', role:'الصلاحية',
-    department:'القسم', jobTitle:'المسمى الوظيفي', high:'عالية', medium:'متوسطة', low:'منخفضة',
-    pending:'انتظار', inProgress:'جاري', inReview:'مراجعة', completed:'منجز',
-    onHold:'موقوف', delayed:'متأخر', staff:'موظف', admin:'مسؤول', superAdmin:'مسؤول رئيسي',
-    profile:'الملف الشخصي', appearance:'المظهر', notifSettings:'الإشعارات', about:'حول النظام',
-    totalTasks:'إجمالي المهام', completedTasks:'منجزة', inProgressTasks:'جارية',
-    overdueTasks:'متأخرة', teamSize:'حجم الفريق', completionRate:'نسبة الإنجاز',
-    tasksByDept:'المهام حسب القسم', statusOverview:'نظرة عامة للحالات',
-    timeline:'الجدول الزمني', recentActivity:'النشاط الأخير', completionByDept:'الإنجاز حسب القسم',
-    tasksCompleted:'مهمة مكتملة', noTasks:'لا توجد مهام بعد', addFirstTask:'أضف مهمتك الأولى للبدء',
-    noTeam:'لا يوجد أعضاء فريق بعد', noDepts:'لا توجد أقسام بعد', noComments:'لا توجد تعليقات',
-    noHistory:'لا يوجد سجل', noFiles:'لا توجد ملفات مرفقة', searchTasks:'البحث عن مهام...',
-    adminReadOnly:'عرض المسؤول — إحصائيات للقراءة فقط', meetingScheduled:'تم جدولة الاجتماع',
-    meetingFor:'بتاريخ', darkMode:'الوضع الليلي', language:'اللغة', themeColor:'لون المظهر',
-    fontSize:'حجم الخط', small:'صغير', medium2:'متوسط', large:'كبير', hotelName:'اسم الفندق',
-    saveChanges:'حفظ التغييرات', profilePicture:'الصورة الشخصية', changePhoto:'تغيير الصورة',
-    jobTitleLbl:'المسمى الوظيفي', currentPassword:'كلمة المرور الحالية (اختياري)',
-    newPassword:'كلمة مرور جديدة', filterAll:'الكل', filterDept:'القسم',
-    filterStatus:'الحالة', filterPriority:'الأولوية', overdue:'متأخر',
-    taskAdded:'تمت إضافة المهمة', taskUpdated:'تم تحديث المهمة', taskDeleted:'تم حذف المهمة',
-    memberAdded:'تمت إضافة العضو', memberUpdated:'تم تحديث العضو', memberDeleted:'تم حذف العضو',
-    deptAdded:'تمت إضافة القسم', deptUpdated:'تم تحديث القسم', deptDeleted:'تم حذف القسم',
-    commentPosted:'تم نشر التعليق', changesSaved:'تم حفظ التغييرات', meetingSet:'تم جدولة اجتماع لهذه المهمة',
-    confirmDelete:'هل أنت متأكد من الحذف؟ لا يمكن التراجع عن هذا الإجراء.',
-    confirmDeleteTask:'حذف المهمة', confirmDeleteMember:'حذف العضو', confirmDeleteDept:'حذف القسم',
-    subtaskAdded:'تمت إضافة المهمة الفرعية', noSubtasks:'لا توجد مهام فرعية',
-    addSubtaskHint:'أضف مهاماً فرعية لتتبع التقدم', progress:'التقدم', hours:'ساعة',
-    daysDelay:'أيام تأخير', location:'الموقع', assignees:'المسؤولون', depts:'الأقسام',
-    created:'تاريخ الإنشاء', updated:'آخر تحديث', by:'بواسطة', actions:'الإجراءات',
-    id:'المعرف', title:'العنوان', due:'الاستحقاق', name:'الاسم', createdBy:'أنشأه',
-    estimatedHrs:'الساعات التقديرية',
+    appName:'Ø¹ÙÙÙØ§Øª S Hospitality', loginSub:'Ø³Ø¬ÙÙ Ø¯Ø®ÙÙÙ ÙØ¥Ø¯Ø§Ø±Ø© Ø§ÙØ¹ÙÙÙØ§Øª Ø§ÙÙÙØ¯ÙÙØ©',
+    loginErr:'Ø§Ø³Ù Ø§ÙÙØ³ØªØ®Ø¯Ù Ø£Ù ÙÙÙØ© Ø§ÙÙØ±ÙØ± ØºÙØ± ØµØ­ÙØ­Ø©', username:'Ø§Ø³Ù Ø§ÙÙØ³ØªØ®Ø¯Ù', password:'ÙÙÙØ© Ø§ÙÙØ±ÙØ±',
+    signIn:'ØªØ³Ø¬ÙÙ Ø§ÙØ¯Ø®ÙÙ', operations:'Ø§ÙØ¹ÙÙÙØ§Øª', dashboard:'ÙÙØ­Ø© Ø§ÙØªØ­ÙÙ', tasks:'Ø§ÙÙÙØ§Ù',
+    myTasks:'ÙÙØ§ÙÙ', team:'Ø£Ø¹Ø¶Ø§Ø¡ Ø§ÙÙØ±ÙÙ', departments:'Ø§ÙØ£ÙØ³Ø§Ù', settings:'Ø§ÙØ¥Ø¹Ø¯Ø§Ø¯Ø§Øª',
+    statistics:'Ø§ÙØ¥Ø­ØµØ§Ø¦ÙØ§Øª', notifications:'Ø§ÙØ¥Ø´Ø¹Ø§Ø±Ø§Øª', markRead:'ÙØ±Ø§Ø¡Ø© Ø§ÙÙÙ',
+    thisMonth:'ÙØ°Ø§ Ø§ÙØ´ÙØ±', newTask:'ÙÙÙØ© Ø¬Ø¯ÙØ¯Ø©', issueTask:'Ø¥ØµØ¯Ø§Ø± ÙÙÙØ©',
+    addMember:'Ø¥Ø¶Ø§ÙØ© Ø¹Ø¶Ù', addDept:'Ø¥Ø¶Ø§ÙØ© ÙØ³Ù', board:'ÙÙØ­Ø©', list:'ÙØ§Ø¦ÙØ©',
+    edit:'ØªØ¹Ø¯ÙÙ', cancel:'Ø¥ÙØºØ§Ø¡', save:'Ø­ÙØ¸', confirm:'ØªØ£ÙÙØ¯', delete:'Ø­Ø°Ù',
+    details:'Ø§ÙØªÙØ§ØµÙÙ', attachments:'Ø§ÙÙØ±ÙÙØ§Øª', meeting:'Ø§Ø¬ØªÙØ§Ø¹', subtasks:'Ø§ÙÙÙØ§Ù Ø§ÙÙØ±Ø¹ÙØ©',
+    overview:'ÙØ¸Ø±Ø© Ø¹Ø§ÙØ©', comments:'Ø§ÙØªØ¹ÙÙÙØ§Øª', files:'Ø§ÙÙÙÙØ§Øª', history:'Ø§ÙØ³Ø¬Ù',
+    taskTitle:'Ø¹ÙÙØ§Ù Ø§ÙÙÙÙØ© *', description:'Ø§ÙÙØµÙ', assignTo:'ØªØ¹ÙÙÙ Ø¥ÙÙ',
+    priority:'Ø§ÙØ£ÙÙÙÙØ©', status:'Ø§ÙØ­Ø§ÙØ©', dueDate:'ØªØ§Ø±ÙØ® Ø§ÙØ§Ø³ØªØ­ÙØ§Ù',
+    estimatedHours:'Ø§ÙØ³Ø§Ø¹Ø§Øª Ø§ÙØªÙØ¯ÙØ±ÙØ©', delayDays:'Ø£ÙØ§Ù Ø§ÙØªØ£Ø®ÙØ±', delayReason:'Ø³Ø¨Ø¨ Ø§ÙØªØ£Ø®ÙØ±',
+    lastLocation:'Ø¢Ø®Ø± ÙÙÙØ¹ / ÙÙØ·Ø© Ø§ÙØªÙÙÙ', notes:'ÙÙØ§Ø­Ø¸Ø§Øª / ØªØ­Ø¯ÙØ« Ø§ÙØªÙØ¯Ù',
+    dropFiles:'Ø§Ø³Ø­Ø¨ Ø§ÙÙÙÙØ§Øª ÙÙØ§ Ø£Ù Ø§ÙÙØ± ÙÙØ±ÙØ¹', fileTypes:'PDFØ ØµÙØ±Ø WordØ Excel â Ø§ÙØ­Ø¬Ù Ø§ÙØ£ÙØµÙ 20MB',
+    requestMeeting:'Ø·ÙØ¨ Ø§Ø¬ØªÙØ§Ø¹', meetingDesc:'Ø¬Ø¯ÙÙØ© Ø§Ø¬ØªÙØ§Ø¹ ÙØ±ØªØ¨Ø· Ø¨ÙØ°Ù Ø§ÙÙÙÙØ©',
+    meetingTitle:'Ø¹ÙÙØ§Ù Ø§ÙØ§Ø¬ØªÙØ§Ø¹', date:'Ø§ÙØªØ§Ø±ÙØ®', time:'Ø§ÙÙÙØª', locationLink:'Ø§ÙÙÙÙØ¹ / Ø§ÙØ±Ø§Ø¨Ø·',
+    agenda:'Ø¬Ø¯ÙÙ Ø§ÙØ£Ø¹ÙØ§Ù', scheduleMeeting:'Ø¬Ø¯ÙÙØ© Ø§ÙØ§Ø¬ØªÙØ§Ø¹', addSubtask:'Ø¥Ø¶Ø§ÙØ© ÙÙÙØ© ÙØ±Ø¹ÙØ©',
+    issueNewTask:'Ø¥ØµØ¯Ø§Ø± ÙÙÙØ© Ø¬Ø¯ÙØ¯Ø©', fullName:'Ø§ÙØ§Ø³Ù Ø§ÙÙØ§ÙÙ *', role:'Ø§ÙØµÙØ§Ø­ÙØ©',
+    department:'Ø§ÙÙØ³Ù', jobTitle:'Ø§ÙÙØ³ÙÙ Ø§ÙÙØ¸ÙÙÙ', high:'Ø¹Ø§ÙÙØ©', medium:'ÙØªÙØ³Ø·Ø©', low:'ÙÙØ®ÙØ¶Ø©',
+    pending:'Ø§ÙØªØ¸Ø§Ø±', inProgress:'Ø¬Ø§Ø±Ù', inReview:'ÙØ±Ø§Ø¬Ø¹Ø©', completed:'ÙÙØ¬Ø²',
+    onHold:'ÙÙÙÙÙ', delayed:'ÙØªØ£Ø®Ø±', staff:'ÙÙØ¸Ù', admin:'ÙØ³Ø¤ÙÙ', superAdmin:'ÙØ³Ø¤ÙÙ Ø±Ø¦ÙØ³Ù',
+    profile:'Ø§ÙÙÙÙ Ø§ÙØ´Ø®ØµÙ', appearance:'Ø§ÙÙØ¸ÙØ±', notifSettings:'Ø§ÙØ¥Ø´Ø¹Ø§Ø±Ø§Øª', about:'Ø­ÙÙ Ø§ÙÙØ¸Ø§Ù',
+    totalTasks:'Ø¥Ø¬ÙØ§ÙÙ Ø§ÙÙÙØ§Ù', completedTasks:'ÙÙØ¬Ø²Ø©', inProgressTasks:'Ø¬Ø§Ø±ÙØ©',
+    overdueTasks:'ÙØªØ£Ø®Ø±Ø©', teamSize:'Ø­Ø¬Ù Ø§ÙÙØ±ÙÙ', completionRate:'ÙØ³Ø¨Ø© Ø§ÙØ¥ÙØ¬Ø§Ø²',
+    tasksByDept:'Ø§ÙÙÙØ§Ù Ø­Ø³Ø¨ Ø§ÙÙØ³Ù', statusOverview:'ÙØ¸Ø±Ø© Ø¹Ø§ÙØ© ÙÙØ­Ø§ÙØ§Øª',
+    timeline:'Ø§ÙØ¬Ø¯ÙÙ Ø§ÙØ²ÙÙÙ', recentActivity:'Ø§ÙÙØ´Ø§Ø· Ø§ÙØ£Ø®ÙØ±', completionByDept:'Ø§ÙØ¥ÙØ¬Ø§Ø² Ø­Ø³Ø¨ Ø§ÙÙØ³Ù',
+    tasksCompleted:'ÙÙÙØ© ÙÙØªÙÙØ©', noTasks:'ÙØ§ ØªÙØ¬Ø¯ ÙÙØ§Ù Ø¨Ø¹Ø¯', addFirstTask:'Ø£Ø¶Ù ÙÙÙØªÙ Ø§ÙØ£ÙÙÙ ÙÙØ¨Ø¯Ø¡',
+    noTeam:'ÙØ§ ÙÙØ¬Ø¯ Ø£Ø¹Ø¶Ø§Ø¡ ÙØ±ÙÙ Ø¨Ø¹Ø¯', noDepts:'ÙØ§ ØªÙØ¬Ø¯ Ø£ÙØ³Ø§Ù Ø¨Ø¹Ø¯', noComments:'ÙØ§ ØªÙØ¬Ø¯ ØªØ¹ÙÙÙØ§Øª',
+    noHistory:'ÙØ§ ÙÙØ¬Ø¯ Ø³Ø¬Ù', noFiles:'ÙØ§ ØªÙØ¬Ø¯ ÙÙÙØ§Øª ÙØ±ÙÙØ©', searchTasks:'Ø§ÙØ¨Ø­Ø« Ø¹Ù ÙÙØ§Ù...',
+    adminReadOnly:'Ø¹Ø±Ø¶ Ø§ÙÙØ³Ø¤ÙÙ â Ø¥Ø­ØµØ§Ø¦ÙØ§Øª ÙÙÙØ±Ø§Ø¡Ø© ÙÙØ·', meetingScheduled:'ØªÙ Ø¬Ø¯ÙÙØ© Ø§ÙØ§Ø¬ØªÙØ§Ø¹',
+    meetingFor:'Ø¨ØªØ§Ø±ÙØ®', darkMode:'Ø§ÙÙØ¶Ø¹ Ø§ÙÙÙÙÙ', language:'Ø§ÙÙØºØ©', themeColor:'ÙÙÙ Ø§ÙÙØ¸ÙØ±',
+    fontSize:'Ø­Ø¬Ù Ø§ÙØ®Ø·', small:'ØµØºÙØ±', medium2:'ÙØªÙØ³Ø·', large:'ÙØ¨ÙØ±', hotelName:'Ø§Ø³Ù Ø§ÙÙÙØ¯Ù',
+    saveChanges:'Ø­ÙØ¸ Ø§ÙØªØºÙÙØ±Ø§Øª', profilePicture:'Ø§ÙØµÙØ±Ø© Ø§ÙØ´Ø®ØµÙØ©', changePhoto:'ØªØºÙÙØ± Ø§ÙØµÙØ±Ø©',
+    jobTitleLbl:'Ø§ÙÙØ³ÙÙ Ø§ÙÙØ¸ÙÙÙ', currentPassword:'ÙÙÙØ© Ø§ÙÙØ±ÙØ± Ø§ÙØ­Ø§ÙÙØ© (Ø§Ø®ØªÙØ§Ø±Ù)',
+    newPassword:'ÙÙÙØ© ÙØ±ÙØ± Ø¬Ø¯ÙØ¯Ø©', filterAll:'Ø§ÙÙÙ', filterDept:'Ø§ÙÙØ³Ù',
+    filterStatus:'Ø§ÙØ­Ø§ÙØ©', filterPriority:'Ø§ÙØ£ÙÙÙÙØ©', overdue:'ÙØªØ£Ø®Ø±',
+    taskAdded:'ØªÙØª Ø¥Ø¶Ø§ÙØ© Ø§ÙÙÙÙØ©', taskUpdated:'ØªÙ ØªØ­Ø¯ÙØ« Ø§ÙÙÙÙØ©', taskDeleted:'ØªÙ Ø­Ø°Ù Ø§ÙÙÙÙØ©',
+    memberAdded:'ØªÙØª Ø¥Ø¶Ø§ÙØ© Ø§ÙØ¹Ø¶Ù', memberUpdated:'ØªÙ ØªØ­Ø¯ÙØ« Ø§ÙØ¹Ø¶Ù', memberDeleted:'ØªÙ Ø­Ø°Ù Ø§ÙØ¹Ø¶Ù',
+    deptAdded:'ØªÙØª Ø¥Ø¶Ø§ÙØ© Ø§ÙÙØ³Ù', deptUpdated:'ØªÙ ØªØ­Ø¯ÙØ« Ø§ÙÙØ³Ù', deptDeleted:'ØªÙ Ø­Ø°Ù Ø§ÙÙØ³Ù',
+    commentPosted:'ØªÙ ÙØ´Ø± Ø§ÙØªØ¹ÙÙÙ', changesSaved:'ØªÙ Ø­ÙØ¸ Ø§ÙØªØºÙÙØ±Ø§Øª', meetingSet:'ØªÙ Ø¬Ø¯ÙÙØ© Ø§Ø¬ØªÙØ§Ø¹ ÙÙØ°Ù Ø§ÙÙÙÙØ©',
+    confirmDelete:'ÙÙ Ø£ÙØª ÙØªØ£ÙØ¯ ÙÙ Ø§ÙØ­Ø°ÙØ ÙØ§ ÙÙÙÙ Ø§ÙØªØ±Ø§Ø¬Ø¹ Ø¹Ù ÙØ°Ø§ Ø§ÙØ¥Ø¬Ø±Ø§Ø¡.',
+    confirmDeleteTask:'Ø­Ø°Ù Ø§ÙÙÙÙØ©', confirmDeleteMember:'Ø­Ø°Ù Ø§ÙØ¹Ø¶Ù', confirmDeleteDept:'Ø­Ø°Ù Ø§ÙÙØ³Ù',
+    subtaskAdded:'ØªÙØª Ø¥Ø¶Ø§ÙØ© Ø§ÙÙÙÙØ© Ø§ÙÙØ±Ø¹ÙØ©', noSubtasks:'ÙØ§ ØªÙØ¬Ø¯ ÙÙØ§Ù ÙØ±Ø¹ÙØ©',
+    addSubtaskHint:'Ø£Ø¶Ù ÙÙØ§ÙØ§Ù ÙØ±Ø¹ÙØ© ÙØªØªØ¨Ø¹ Ø§ÙØªÙØ¯Ù', progress:'Ø§ÙØªÙØ¯Ù', hours:'Ø³Ø§Ø¹Ø©',
+    daysDelay:'Ø£ÙØ§Ù ØªØ£Ø®ÙØ±', location:'Ø§ÙÙÙÙØ¹', assignees:'Ø§ÙÙØ³Ø¤ÙÙÙÙ', depts:'Ø§ÙØ£ÙØ³Ø§Ù',
+    created:'ØªØ§Ø±ÙØ® Ø§ÙØ¥ÙØ´Ø§Ø¡', updated:'Ø¢Ø®Ø± ØªØ­Ø¯ÙØ«', by:'Ø¨ÙØ§Ø³Ø·Ø©', actions:'Ø§ÙØ¥Ø¬Ø±Ø§Ø¡Ø§Øª',
+    id:'Ø§ÙÙØ¹Ø±Ù', title:'Ø§ÙØ¹ÙÙØ§Ù', due:'Ø§ÙØ§Ø³ØªØ­ÙØ§Ù', name:'Ø§ÙØ§Ø³Ù', createdBy:'Ø£ÙØ´Ø£Ù',
+    estimatedHrs:'Ø§ÙØ³Ø§Ø¹Ø§Øª Ø§ÙØªÙØ¯ÙØ±ÙØ©',
   }
 };
 
@@ -984,19 +984,19 @@ let S = {
   tempAttachments: [], tempSubtasks: [], tempMeeting: null,
   filterDept:'', filterStatus:'', filterPriority:'', searchQ:'',
   notifs: [
-    { icon:'ti-clipboard-list', bg:'#EBF3FB', ic:'#1B6CA8', text:'System ready — Welcome to S Hospitality Operations', time:'just now', read:false }
+    { icon:'ti-clipboard-list', bg:'#EBF3FB', ic:'#1B6CA8', text:'System ready â Welcome to S Hospitality Operations', time:'just now', read:false }
   ],
   defaultUsers: [
     {id:1, username:'superadmin', password:'admin123', role:'superadmin', name:'Super Admin', displayName:'Super Admin', dept:null, title:'System Manager', avatar:null},
     {id:2, username:'admin',      password:'admin456', role:'admin',      name:'Admin',       displayName:'Admin',       dept:null, title:'Hotel Manager',  avatar:null}
   ],
   defaultDepts: [
-    {id:'hk',  name:'Housekeeping',    color:'#1D9E75', bg:'#E1F5EE', tc:'#085041', icon:'ti-home',      fullEn:'Housekeeping',              fullAr:'تدبير منزلي'},
-    {id:'fo',  name:'Front Office',    color:'#185FA5', bg:'#E6F1FB', tc:'#0C447C', icon:'ti-door',      fullEn:'Front Office',              fullAr:'استقبال'},
-    {id:'eng', name:'Engineering',     color:'#BA7517', bg:'#FAEEDA', tc:'#633806', icon:'ti-tool',      fullEn:'Engineering & Maintenance', fullAr:'هندسة وصيانة'},
-    {id:'hr',  name:'Human Resources', color:'#534AB7', bg:'#EEEDFE', tc:'#3C3489', icon:'ti-users',     fullEn:'Human Resources',           fullAr:'موارد بشرية'},
-    {id:'fb',  name:'Food & Beverage', color:'#D85A30', bg:'#FAECE7', tc:'#712B13', icon:'ti-chef-hat',  fullEn:'Food & Beverage',           fullAr:'طعام وشراب'},
-    {id:'fin', name:'Finance',         color:'#639922', bg:'#EAF3DE', tc:'#27500A', icon:'ti-coin',      fullEn:'Finance',                   fullAr:'مالية'}
+    {id:'hk',  name:'Housekeeping',    color:'#1D9E75', bg:'#E1F5EE', tc:'#085041', icon:'ti-home',      fullEn:'Housekeeping',              fullAr:'ØªØ¯Ø¨ÙØ± ÙÙØ²ÙÙ'},
+    {id:'fo',  name:'Front Office',    color:'#185FA5', bg:'#E6F1FB', tc:'#0C447C', icon:'ti-door',      fullEn:'Front Office',              fullAr:'Ø§Ø³ØªÙØ¨Ø§Ù'},
+    {id:'eng', name:'Engineering',     color:'#BA7517', bg:'#FAEEDA', tc:'#633806', icon:'ti-tool',      fullEn:'Engineering & Maintenance', fullAr:'ÙÙØ¯Ø³Ø© ÙØµÙØ§ÙØ©'},
+    {id:'hr',  name:'Human Resources', color:'#534AB7', bg:'#EEEDFE', tc:'#3C3489', icon:'ti-users',     fullEn:'Human Resources',           fullAr:'ÙÙØ§Ø±Ø¯ Ø¨Ø´Ø±ÙØ©'},
+    {id:'fb',  name:'Food & Beverage', color:'#D85A30', bg:'#FAECE7', tc:'#712B13', icon:'ti-chef-hat',  fullEn:'Food & Beverage',           fullAr:'Ø·Ø¹Ø§Ù ÙØ´Ø±Ø§Ø¨'},
+    {id:'fin', name:'Finance',         color:'#639922', bg:'#EAF3DE', tc:'#27500A', icon:'ti-coin',      fullEn:'Finance',                   fullAr:'ÙØ§ÙÙØ©'}
   ],
   hotelName: 'S Hospitality',
   COLORS: ['#1B6CA8','#0F6E56','#B8860B','#534AB7','#C0392B','#16A085','#8E44AD','#2C3E50']
@@ -1025,7 +1025,7 @@ function timeAgo(iso) {
 }
 
 function formatDate(d) {
-  if (!d) return '—';
+  if (!d) return 'â';
   try { return new Date(d).toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric'}); }
   catch(e) { return d; }
 }
@@ -1050,7 +1050,7 @@ function stBadge(s) {
     wait:`b-wait ${t('pending')}`, prog:`b-prog ${t('inProgress')}`, review:`b-review ${t('inReview')}`,
     done:`b-done ${t('completed')}`, hold:`b-hold ${t('onHold')}`, late:`b-late ${t('delayed')}`
   };
-  const parts = (m[s]||'b-wait —').split(' ');
+  const parts = (m[s]||'b-wait â').split(' ');
   const cls = parts.shift();
   return `<span class="badge ${cls}">${parts.join(' ')}</span>`;
 }
@@ -1305,7 +1305,7 @@ function renderDash() {
 
   $('dash-stats').innerHTML = `
     <div class="stat-card"><div class="stat-icon si-blue"><i class="ti ti-clipboard-list"></i></div><div class="stat-label">${t('totalTasks')}</div><div class="stat-val">${tk.length}</div><div class="stat-sub">${S.depts.length} ${t('departments').toLowerCase()}</div></div>
-    <div class="stat-card"><div class="stat-icon si-green"><i class="ti ti-check"></i></div><div class="stat-label">${t('completedTasks')}</div><div class="stat-val">${done}</div><div class="stat-sub stat-up">↑ ${pct}% rate</div></div>
+    <div class="stat-card"><div class="stat-icon si-green"><i class="ti ti-check"></i></div><div class="stat-label">${t('completedTasks')}</div><div class="stat-val">${done}</div><div class="stat-sub stat-up">â ${pct}% rate</div></div>
     <div class="stat-card"><div class="stat-icon si-gold"><i class="ti ti-loader"></i></div><div class="stat-label">${t('inProgressTasks')}</div><div class="stat-val">${prog}</div><div class="stat-sub">${wait} ${t('pending').toLowerCase()}</div></div>
     <div class="stat-card"><div class="stat-icon si-red"><i class="ti ti-alert-triangle"></i></div><div class="stat-label">${t('overdueTasks')}</div><div class="stat-val">${late}</div><div class="stat-sub stat-dn">${late?'Needs attention':'-'}</div></div>
     <div class="stat-card"><div class="stat-icon si-purple"><i class="ti ti-users"></i></div><div class="stat-label">${t('teamSize')}</div><div class="stat-val">${staff}</div><div class="stat-sub">active members</div></div>
@@ -1573,7 +1573,7 @@ function renderList(tasks) {
               <td>${stBadge(tk.status)}</td>
               <td>${prioBadge(tk.priority)}</td>
               <td>${(tk.depts||[]).map(d=>deptBadge(d)).join(' ')}</td>
-              <td><span class="text-sm text-muted">${aNames||'—'}</span></td>
+              <td><span class="text-sm text-muted">${aNames||'â'}</span></td>
               <td><span class="text-sm ${isOverdue(tk)?'text-danger font-weight:600':''}">${formatDate(tk.due_date)}</span></td>
               ${S.user.role!=='staff'?`<td onclick="event.stopPropagation()">
                 <div class="flex gap-2">
@@ -1651,7 +1651,7 @@ function renderDetailOverview(tk) {
   const assigneesHTML = (tk.assignees||[]).map(uid => {
     const u = userById(uid);
     if (!u) return '';
-    return `<div class="flex items-center gap-2 mb-2">${avatarEl(u,26)}<span class="text-sm">${esc(u.displayName||u.name)}</span>${u.title?`<span class="text-xs text-muted">— ${esc(u.title)}</span>`:''}</div>`;
+    return `<div class="flex items-center gap-2 mb-2">${avatarEl(u,26)}<span class="text-sm">${esc(u.displayName||u.name)}</span>${u.title?`<span class="text-xs text-muted">â ${esc(u.title)}</span>`:''}</div>`;
   }).join('');
 
   const subTotal = (tk.subtasks||[]).length;
@@ -1665,7 +1665,7 @@ function renderDetailOverview(tk) {
         ${tk.notes?`<div style="background:var(--bg);border-radius:8px;padding:11px 14px;margin-bottom:12px;border-left:3px solid ${S.themeColor}"><div class="text-xs text-muted mb-2"><i class="ti ti-notes"></i> ${t('notes')}</div><div style="font-size:13px">${esc(tk.notes)}</div></div>`:''}
         ${tk.location?`<div class="flex items-center gap-2 mb-3 text-sm"><i class="ti ti-map-pin" style="color:var(--accent)"></i><strong>${t('location')}:</strong> ${esc(tk.location)}</div>`:''}
         ${(tk.hours&&tk.hours>0)?`<div class="flex items-center gap-2 mb-3 text-sm"><i class="ti ti-clock" style="color:var(--accent)"></i><strong>${t('estimatedHrs')}:</strong> ${tk.hours} ${t('hours')}</div>`:''}
-        ${(tk.delay_days&&tk.delay_days>0)?`<div class="flex items-center gap-2 mb-3 text-sm" style="color:#E74C3C"><i class="ti ti-clock-minus"></i><strong>${t('delayDays')}:</strong> ${tk.delay_days} ${t('daysDelay')}${tk.delay_reason?` — ${esc(tk.delay_reason)}`:''}</div>`:''}
+        ${(tk.delay_days&&tk.delay_days>0)?`<div class="flex items-center gap-2 mb-3 text-sm" style="color:#E74C3C"><i class="ti ti-clock-minus"></i><strong>${t('delayDays')}:</strong> ${tk.delay_days} ${t('daysDelay')}${tk.delay_reason?` â ${esc(tk.delay_reason)}`:''}</div>`:''}
         ${tk.meeting?.title?`
           <div style="background:linear-gradient(135deg,#EBF3FB,#F0EFFE);border:1px solid #D0E6F8;border-radius:9px;padding:12px 14px;margin-bottom:12px">
             <div class="flex items-center gap-2 mb-2"><i class="ti ti-video" style="color:var(--accent);font-size:16px"></i><strong style="font-size:13px">${t('meeting')}</strong></div>
@@ -1709,7 +1709,7 @@ function renderDetailOverview(tk) {
           </div>`:''}
           <div class="td-meta mb-2">
             <div class="td-meta-label">${t('depts')}</div>
-            <div class="td-meta-val" style="display:flex;gap:4px;flex-wrap:wrap">${(tk.depts||[]).map(d=>deptBadge(d)).join('') || '—'}</div>
+            <div class="td-meta-val" style="display:flex;gap:4px;flex-wrap:wrap">${(tk.depts||[]).map(d=>deptBadge(d)).join('') || 'â'}</div>
           </div>
           ${assigneesHTML?`<div class="td-meta mb-2">
             <div class="td-meta-label mb-2">${t('assignees')}</div>
@@ -1757,7 +1757,7 @@ function renderDetailHistory(tk) {
       <div class="hist-icon"><i class="ti ti-history"></i></div>
       <div>
         <div class="hist-text">${esc(h.action||'')}</div>
-        <div class="hist-time">${timeAgo(h.created_at)} ${h.user_name?'— '+esc(h.user_name):''}</div>
+        <div class="hist-time">${timeAgo(h.created_at)} ${h.user_name?'â '+esc(h.user_name):''}</div>
       </div>
     </div>
   `).join('') : `<div class="text-muted text-sm" style="padding:12px 0">${t('noHistory')}</div>`;
@@ -1852,7 +1852,7 @@ function openEditTask(id) {
     $('m-time').value = S.tempMeeting.time||'';
     $('m-loc').value = S.tempMeeting.location||'';
     $('m-agenda').value = S.tempMeeting.agenda||'';
-    $('meeting-status').textContent = `✓ ${t('meetingScheduled')}`;
+    $('meeting-status').textContent = `â ${t('meetingScheduled')}`;
   }
   switchTab(document.querySelector('#ov-task .m-tab'), 'tab-basic');
   openModal('ov-task');
@@ -2017,7 +2017,7 @@ function renderTeam() {
       <div class="user-av" style="background:${u.avatar?'transparent':S.themeColor}">${u.avatar?`<img src="${esc(u.avatar)}">`:''}${!u.avatar?initials(u.displayName||u.name):''}</div>
       <div style="flex:1">
         <div style="font-weight:600">${esc(u.displayName||u.name)}</div>
-        <div class="text-xs text-muted">${u.title?esc(u.title):''}${dept?` · ${deptName(dept.id)}`:''}</div>
+        <div class="text-xs text-muted">${u.title?esc(u.title):''}${dept?` Â· ${deptName(dept.id)}`:''}</div>
       </div>
       <span class="${roleCls}">${roleLbl}</span>
       ${canEdit?`<div class="flex gap-2">
@@ -2259,7 +2259,7 @@ function buildProfilePanel() {
       </div>
       <div class="fld-row">
         <div class="fld"><label>${t('jobTitle')}</label><input id="sp-title" value="${esc(u.title||'')}"></div>
-        <div class="fld"><label>${t('department')}</label><input value="${u.dept?deptName(u.dept):'—'}" disabled></div>
+        <div class="fld"><label>${t('department')}</label><input value="${u.dept?deptName(u.dept):'â'}" disabled></div>
       </div>
       <div class="fld"><label>${t('newPassword')}</label><input type="password" id="sp-pass" placeholder="Leave blank to keep current"></div>
       <button class="btn btn-primary" onclick="saveProfile()"><i class="ti ti-device-floppy"></i> ${t('saveChanges')}</button>
@@ -2305,8 +2305,8 @@ function buildAppearancePanel() {
     <div class="settings-section">
       <div class="ss-title"><i class="ti ti-language"></i> ${t('language')}</div>
       <div class="flex gap-2">
-        <button class="btn btn-sm ${LANG==='en'?'btn-primary':'btn-ghost'}" onclick="setLang('en')">🇬🇧 English</button>
-        <button class="btn btn-sm ${LANG==='ar'?'btn-primary':'btn-ghost'}" onclick="setLang('ar')">🇸🇦 العربية</button>
+        <button class="btn btn-sm ${LANG==='en'?'btn-primary':'btn-ghost'}" onclick="setLang('en')">ð¬ð§ English</button>
+        <button class="btn btn-sm ${LANG==='ar'?'btn-primary':'btn-ghost'}" onclick="setLang('ar')">ð¸ð¦ Ø§ÙØ¹Ø±Ø¨ÙØ©</button>
       </div>
     </div>
   </div>`;
@@ -2444,7 +2444,7 @@ function applyLang() {
   const langBtns = ['lang-topbar-btn','lang-login-btn'];
   langBtns.forEach(id => {
     const el = $(id);
-    if (el) el.textContent = LANG==='en'?'عربي':'English';
+    if (el) el.textContent = LANG==='en'?'Ø¹Ø±Ø¨Ù':'English';
   });
 }
 
